@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label "docker-agent"
+    label "Built-In Node"
   }
   stages {
     stage ('Run Docker Compose') {
