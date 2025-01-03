@@ -1,4 +1,4 @@
-const apiUrl = "127.0.0.1/api/dish.php"; // Ensure this matches your local setup
+const apiUrl = "localhost/api/dish.php"; // Ensure this matches your local setup
 
 
 
