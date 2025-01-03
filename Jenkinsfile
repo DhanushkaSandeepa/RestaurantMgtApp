@@ -4,8 +4,14 @@ pipeline {
   }
   stages {
     stage ('Run Docker Compose') {
-      steps{
-        sh 'sudo docker-compose up -d'
+      steps {
+        script {
+          if (isUnix()) {
+            sh 'docker-compose up -d'
+          } else {
+            bat 'docker-compose up -d'
+          }
+        }
       }
     }
   }
