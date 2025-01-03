@@ -1,6 +1,4 @@
 pipeline {
-  agent {
-  }
   stages {
     stage ('Run Docker Compose') {
       steps{
