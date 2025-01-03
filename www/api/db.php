@@ -2,7 +2,7 @@
 $host = "db";
 $db_name = "restaurant_menu_system";
 $username = "root";
-$password = "";
+$password = "root";
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$db_name", $username, $password);
